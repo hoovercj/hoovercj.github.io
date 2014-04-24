@@ -1,46 +1,24 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Portfolio
+tagline: A Living Document
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## Welcome!
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+This is a digital portfolio with information about my projects and experiences. Below you'll filnd out some basic information about me and above you can navigate throughout the site for more in-depth information about things I am proud of and excited to share. Enjoy!
 
-## Update Author Attributes
+## About Me
+I am currently studying Software Engineering at Iowa State University and expect to receive my B.S. in May 2014, after which I will pursue an M.S. in Human Computer Interaction at Iowa State which I hope to obtain in May 2015. I primarily have a background in Java and Android development with a strong desire to expand on my exposure to Big Data concepts (such as Hadoop, Pig, and Hive) and backend web development. My interest in Android stems from a semester studying at the University of Southern Denmark in Odense, DK where I took an Android development course. Since then I have released an app on the Google Play store, completed an Android development internship with Garmin, and have worked as both an Undergraduate Research Assistant and Teaching Assitant teaching and developing for Android. This past summer I was even invited to Denmark to participate in a Mobile Development workshop with LEGO.
 
-In `_config.yml` remember to specify your own data:
+Beyond technology, I am passionate about studying abroad and Iowa State. Through my executive positions in multiple organizations I currently serve as an evangelist for the Iowa State University College of Engineering as a whole as well as its Engineering International Programs office. This involvement allows me to share my enthusiasm and knowledge with students and families before and after they join Iowa State.
+
+In my spare time I like to watch BBC greats such as Doctor Who and Sherlock, as well as CW dramas such as Supernatural. I also recently discovered a love of ethnic food and am on a mission to try cuisine from every country (and visit them all too, if I can!!).
     
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+## After Graduation
+Through working as a member of an international team in both an internship setting and while participating in a group-project based study abroad program, and also through living abroad, I have developed a desire to be a global citizen. I wish to seek international opportunities after graduation, with preference for working for a company with international offices or a strong focus on delivering wonderful user experiences to a global audience.
 
 
+<iframe width="420" height="315" src="https://www.youtube.com/embed/hQX-A7PFAGE?feature=player_embedded"
+    frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
