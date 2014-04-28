@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Satsy: Design Document</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Satsy</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+           <li><a href="about.html">About</a></li>
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Potfolio<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="portfolio-item.html">Project Plan</a></li>
+                <li class="active"><a href="designdoc.html">Design Document</a></li>
+                <li><a href="weekly.html">Weekly Reports</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+          <h1 class="page-header">Design Document</h1>
+          <ol class="breadcrumb">
+            <li><a class="a-inverse" href="index.html">Home</a></li>
+            <li class="active">Design Document</li>
+          </ol>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <h3>Project Description</h3>
+            <p>This system is built using Java EE leveraging Apache Tomcat and MySQL. This makes it extremely portable and can be easily deployed in a number of different ways. One option is to deploy locally on a piece of commodity hardware as we are doing. We are using a Mac Mini using OS X Server to host Satsy. Other options include using cloud hosting such as  Amazon Web Services (AWS). The free tier provides a limited amount of resources without cost, but has very poor performance for an application such as Satsy. More resources can be obtained for a cost if needed and requires additional engineering effort to maintain.</p>
+          <h3>System Components</h3>
+          <ul>
+            <li>Bootstrap enabled, responsive frontend</li>
+            <li>Self Hosted Java Server running search logic and Z3 instances</li>
+            <li>MySQL Datastore containing specially encocded methods and raw source code</li>
+          </ul>
+
+          <a href="#"><i class="fa fa-download"></i> Download full design document here.</a>
+        </div>
+
+        <div class="col-md-8">
+          <img class="img-responsive" src="img/design.png">
+        </div>
+
+      </div>
+
+    </div><!-- /.container -->
+
+    <div class="container">
+
+      <hr>
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; Iowa State University 2013</p>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modern-business.js"></script>
+
+  </body>
+</html>

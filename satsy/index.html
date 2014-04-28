@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Satsy - ISU Senior Design Project Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+          <a class="navbar-brand" href="index.html">Satsy</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Potfolio<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="portfolio-item.html">Project Plan</a></li>
+                <li><a href="designdoc.html">Design Document</a></li>
+                <li><a href="weekly.html">Weekly Reports</a></li
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    <div id="myCarousel" class="carousel slide">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="fill" style="background-image:url('img/group.jpg');"></div>
+            <div class="carousel-caption">
+              <h1>Satsy</h1>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="section">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <h3><i class="fa fa-check-circle"></i> Usable Results</h3>
+            <p>Satsy returns real, usable pieces of code that you can plug in to your project directly. It's quick. It's easy. It compiles.</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h3><i class="fa fa-pencil"></i> Example-Based Search</h3>
+            <p>You don't need to translate your needs to English. Provide pairs of example inputs and their corresponding outputs and let Satsy do the rest.</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h3><i class="fa fa-wrench"></i> A Work in Progress</h3>
+            <p>This project is a manifestation of ongoing research and will continue to grow to allow more complex searches and richer functionality.</p>
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+
+    </div><!-- /.section -->
+
+    <div class="section-colored text-center">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>A Collaboration Between Dr. Kathryn Stolee and an ISU Senior Design Team</h2>
+            <p>Satsy aims to simplify the code-search problem by allowing you to talk in the same language as methods: inputs and outputs.</p>
+            <hr>
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+
+    </div><!-- /.section-colored -->
+    <div class="section">
+	  <div class="container">
+
+	    <div class="row">
+	      <div class="col-lg-6 col-md-6 col-sm-6">
+	        <img class="img-responsive" src="img/SMT.png">
+	      </div>
+	      <div class="col-lg-6 col-md-6 col-sm-6">
+	        <h2>SMT Based Search</h2>
+	        <ul>
+	      	  <li>Allows user to focus on describing the behavior through examples, not google-friendly words</li>
+	          <li>Database of specially encoded methods</li>
+	          <li>User provided inputs and outputs translated into constraints</li>
+	          <li>Constraints checked against the methods and solved by Z3 (an open-source Solution Modulo Theories Solver developed at Microsoft Research)</li>
+	        </ul>
+	      </div>
+	    </div><!-- /.row -->
+
+	  </div><!-- /.container -->
+
+	</div><!-- /.section -->
+
+	<div class="section-colored">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <h2>A Portable Web Solution</h2>
+            <ul>
+              <li>Based on the popular technologies Apache Tomcat, Java EE, and MySQL, a system can be set up and deployed anywhere in minutes!</li>
+              <li>Host locally on a spare machine or other commodity hardware for complete control.</li>
+              <li>Or, host in the cloud using AWS EC2 or an alternative surface for more support and reliability.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img class="img-responsive" src="img/stack.png">
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+
+    </div><!-- /.section-colored -->
+
+    <div class="container">
+
+      <hr>
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; Iowa State University</p>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modern-business.js"></script>
+
+  </body>
+</html>
