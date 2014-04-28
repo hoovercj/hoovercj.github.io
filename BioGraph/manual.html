@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    
+    <meta name="author" content="Cody Hoover">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/bootstrap/css/cyborg.css" rel="stylesheet">
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <script src="/assets/themes/twitter/jquery/jquery.2.0.js"></script>
+    <script type="text/javascript">
+      // Avoid conflict with ender.js.
+      jQuery.noConflict();
+    </script>
+
+
+    <!-- for fancybox -->
+    <link rel="stylesheet" href="/assets/themes/twitter/fancybox/jquery.fancybox.css" />
+    <script src="/assets/themes/twitter/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script language="Javascript" type="text/javascript">
+        //have to do the noconflict because the version on the fancybox
+        //js is different than the rest of the site
+        var fancy = jQuery.noConflict();
+        fancy(document).ready(function() {
+            jQuery(".fancybox").fancybox();
+        });
+    </script>
+
+    <script src="/assets/themes/twitter/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Cody Hoover</a>
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class=" caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                
+                
+
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/projects/gwdb.html">Guild Wars 2 Crafting DB</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/vtgraph.html">VT-Graph</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">International Experience <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                
+                
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+    	<li><a href="/international/lego.html">LEGO Mobile App Challenge</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/international/sdu.html">University of Southern Denmark</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div id="content" class="row-fluid">
+	<div class="span9 main">
+		<div class="hero-unit">
+			<h1>VitruTrace: VT-Graph</h1>
+			<p>An application for real-time graphing of physiological data</p>
+		</div>
+	</div>		
+	<div class="span3 sidebar">
+		<ul class="nav nav-tabs nav-stacked">
+			<li><a href="http://www.vrac.iastate.edu/">VRAC Homepage</a></li>
+			<li><a href="http://www.public.iastate.edu/~nir/">Dr. Nir Keren's Website</a></li>
+		</ul>
+	</div>
+</div>
+
+<h1 id="introduction">Introduction</h1>
+<p>VT-Graph is an android application developed for the VirtuTrace project under the direction of Drs. Nir Keren and Warren Franke. The system is used for collecting physiological data from participants during simulations with soldiers, law enforcement officers, and firefighters in virtual reality environments. The participant is hooked to Biopac which monitors physiological data such as ECG, cardiac output, respiration rate, and galvanic skin response which is sent to an Android device running VT-Graph.</p>
+
+<h1 id="user-guide">User Guide</h1>
+<p>### Getting Started
+This guide will walk you through the basic steps of using the VT-Graph application. It will explain how to connect to a server from an Android application, how to create a &#8220;Dashboard&#8221; which is a particular configuration of graphs, and how to activate and switch between these Dashboards. 
+### Connecting to a server
+When you launch the app you will see a dialog that says &#8220;Configure Server&#8221; with two editable fields. The first is the SERVER IP field in which you will enter the IP or server name that you wish to connect to. The last server connected to will be remembered by the application so you don&#8217;t need to type it in every time. The second is the PORT NUMBER. The default port number is 9999, but if the BioPac daemon (not explained here) is set to use a different port then you will need to change this setting.</p>
+
+<p>When you have entered the corrent information, click the &#8220;Connect&#8221; button in the bottom right of the dialog to connect to a server. If you accidentally dismiss the dialog without connecting, that&#8217;s ok, just click &#8220;connect&#8221; in the top right corner of the action bar to launch the &#8220;Configure Server&#8221; dialog again.</p>
+
+<h3 id="creating-a-dashboard">Creating a Dashboard</h3>
+<p>After connecting to a server you will see an action bar across the top of an otherwise blank screen. Clicking the icon and &#8220;BioGraph&#8221; in the upper left corner of the screen will open a slide-out menu. This will hold a list of the configured Dashboards and has &#8220;+Create New&#8230;&#8221; button. </p>
+
+<p>To create a new Dashboard, click the &#8220;+Create New&#8230;&#8221; button. This will launch a dialog with the title &#8220;Enter Dash Name&#8221;. Enter the desired name and click &#8220;ok&#8221;. This will create and save a Dashboard and launch another dialog to create and edit graphs. </p>
+
+<h3 id="creating-a-graph">Creating a Graph</h3>
+<p>##### The Graph List
+After creating a Dashboard, a dialog will automatically launch that says &#8220;Select Graph:&#8221;. This can also be reached by clicking on a Dashboard in the slide out menu and selecting &#8220;edit&#8221; from the options menu that pops up. Selecting a graph that has already been made will allow you to edit it, and selecting &#8220;+Create New&#8230;&#8221; will open a screen to configure a graph. There currently is no way to delete a graph once it has been created for a Dashboard. Hopefully this will be fixed, but until then the only way around this is to create a new Dashboard with the correct number of graphs.
+##### Entering a Name/Selecting a Type
+The &#8220;Edit/Create Graph&#8221; screen has a text field in the top to enter the name of the graph. After that is a drop down to select the type of graph. Right now the supported types are &#8220;line&#8221; and &#8220;text&#8221;. A line graph will draw a standard line graph, connecting each of the incoming data points in a line, scrolling across the screen. This is good for visualizing data such as an ecg form or the pattern of a participants breathing. A text graph will display a a numerical value (with units, if provided by the system), showing the most recent value received. This is useful for showing the patients heartrate or respiration.
+##### Selecting Channels
+Below that there is a list of data channels that you can choose to have displayed on a particular graph. These are the channels that are provided by the BioPac and will be a series of letter/number pairs such as A1 (for analog channel 1), D1 (for digital channel 1), or C1 (for calculated channel 1). Be careful, if you configure a graph to talk to channel A1 now, but try to activate this graph later when connected to a server that does not have a channel A1, the app may behave inappropriately or crash. If you are using a line graph you may select multiple channels, provided they have the same sampling rate. If you are using a text graph you should only select one channel. If the list is empty that means you aren&#8217;t connected to a server OR the server isn&#8217;t configured properly. 
+##### Selecting a position
+Below the channel list you will see the Position selector. On either side of the screen will be arrows (&#8220;&#171;&#8221; and &#8220;&#187;&#8221;) and below that will be a preview area. The display is divided into a 3x2 grid, and each graph can take up any size rectangle within that grid. That means that a graph can take up a 1x1, 2x1, 2x2, or any other open spot. However, the options are automatically restricted to those that do not overlap with other graphs. Pressing the left or right arrow will change the preview to show where this graph will be. When you are satisfied with the configuration of the graph, click save which will take you back to the Graph List where you can edit other graphs or create more.
+### Activating a Dashboard
+From the slide out menu, select the Dashboard that you want to activate. A popup menu will show you options such as &#8220;rename&#8221; the Dashboard, &#8220;activate&#8221; a Dashboard to see its graphs plotting, &#8220;delete&#8221; a dashboard to remove it and all its graphs from the system, or &#8220;edit&#8221; it to add or edit graphs. Selecting &#8220;Activate&#8221; will update the main display area to show the graphs that were configured and will begin fetching information from the server that you have connected to. If you are NOT connected to a server, the app may crash. If that happens, re-launch the application, make sure you connect properly, and try again. Once activated you should see the information scrolling across the screen.</p>
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2014 Cody Hoover
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
