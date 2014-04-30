@@ -1,281 +1,132 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>University of Southern Denmark</title>
-    
-    <meta name="author" content="Cody Hoover">
-
-    <!-- Enable responsive viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <title>CODY - University of Southern Denmark </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/hover.zoom.js"></script>
+    <script src="../assets/js/hover.zoom.conf.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Le styles -->
-    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/themes/twitter/bootstrap/css/cyborg.css" rel="stylesheet">
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
-
-    <script src="/assets/themes/twitter/jquery/jquery.2.0.js"></script>
-    <script type="text/javascript">
-      // Avoid conflict with ender.js.
-      jQuery.noConflict();
-    </script>
-
-
-    <!-- for fancybox -->
-    <link rel="stylesheet" href="/assets/themes/twitter/fancybox/jquery.fancybox.css" />
-    <script src="/assets/themes/twitter/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-    <script language="Javascript" type="text/javascript">
-        //have to do the noconflict because the version on the fancybox
-        //js is different than the rest of the site
-        var fancy = jQuery.noConflict();
-        fancy(document).ready(function() {
-            jQuery(".fancybox").fancybox();
-        });
-    </script>
-
-    <script src="/assets/themes/twitter/bootstrap/js/bootstrap.js" type="text/javascript"></script>
-
-    <!-- atom & rss feed -->
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="/">Cody Hoover</a>
-          <ul class="nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class=" caret"></b></a>
-              <ul class="dropdown-menu">
-                
-                
-                
 
-
-  
-    
-  
-
-  
-    
-    	<li><a href="/projects/gwdb.html">Guild Wars 2 Crafting DB</a></li>
-    
-  
-
-  
-    
-    	<li><a href="/projects/vtgraph.html">VT-Graph</a></li>
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-
-
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">International Experience <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                
-                
-                
-
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-    
-    	<li><a href="/international/lego.html">LEGO Mobile App Challenge</a></li>
-    
-  
-
-  
-    
-    	<li><a href="/international/sdu.html">University of Southern Denmark</a></li>
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-
-
-              </ul>
-            </li>
-          </ul>
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CODY HOOVER</a>
         </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="http://blog.codyhoover.com">Blog</a></li>
+            <li><a href="../subscribe.html">Subscribe</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
-
-    <div class="container-narrow">
-
-      <div class="content">
-        
-<div class="page-header">
-  <h1>University of Southern Denmark  <small>A Semester Studying Abroad</small></h1>
-</div>
-
-<div class="row-fluid">
-  <div class="span12">
-    
-<h3 id="overview">Overview</h3>
+	
+	
+	<!-- +++++ Projects Section +++++ -->
+	
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h3>University of Southern Denmark  <small>A Semester Studying Abroad</small></h3>
+				<hr>
+				<h4 id="overview">Overview</h4>
 
 <p>I spent the Spring of 2012 on exchange at the University of Southern Denmark (SDU) in Odense. Throughout the semester I worked as a member of an international team on a semester long software design project, made friends from all over the world, and fell in love with Danish people and their culture. </p>
 
-<h3 id="academics">Academics</h3>
+<h4 id="academics">Academics</h4>
 
 <p>I chose SDU because of the unique academic opportunities it offered that weren’t available at Iowa State, in particular the project work and Android couse. I was extremely excited by the opportunity to participate in a semester long project with international teammates and learn more about their cultures. We taught each other a lot as we handled the challenges of an American working with a pair of Slovenian and a pair of Polish software engineering students. Together we built a Android application to replace your school planner. It allowed you to input your course schedule and create assignments and exams with assigned priorities. When all was said and done it was a simple application that I could build in my sleep now, but at the time it required synthesizing our existing Java knowledge with the Android skills we were learning in another course.</p>
 
 <p>The project course was great, but it was the Android course that really had an impact on my life. We used the book “O’Reilly: Learning Android” to build a twitter clone piece by piece as we were introduced to the various pieces of Android. The course was basic, but it was more than we had at my home university and inspired me to create and publish an app on the Play Store after returning home, which led to a series of teaching assistant positions as well as a research assistant position and internship all dealing with Android development. The best part? Being invited back to Denmark to work with LEGO for a student program. I’ll discuss all that in more detail elsewhere on this site. </p>
 
-<h3 id="culture">Culture</h3>
+<h4 id="culture">Culture</h4>
 
 <p>I fell in love with Denmark during my time there, and a big part of that can be attributed to their culture. The Danes are widely considered the happiest people on the planet, a fact that they would explain with “hygge”. According to the official Danish tourist site, “hygge (sounds a bit like “hooga”) roughly translates to coziness, but that definition doesn’t quite cover it…Hygge means creating a nice, warm atmosphere and enjoying the good things in life with good people around you.” This may sound a bit generic and you might find yourself thinking, “How is that different than the way things are back in Iowa?” It’s not completely foreign, and perhaps that’s why I felt so comfortable, but there is definitely a subtle difference. I was lucky enough to live in a dorm with a private room and bathroom and a kitchen shared between 15 people. This lead to plenty of social and cultural exchanges, especially over food: whether cooking Iowa Ham Balls, Spanish Tortilla/Omelette, or Danish Smørrebrød lively conversation about our upcoming elections or Danish sex education. </p>
 
-<h3 id="travels">Travels</h3>
+<h4 id="travels">Travels</h4>
 
 <p>Denmark was wonderful, but I found time to visit some other countries as well. A trip to Saschsenhausen Concentration Camp on the way to Berlin was incredible in making the history I’ve read about in text books relatable. It was an emotional experience that was matched only by a follow-up trip I made to Auschwitz when I visited Poland the following summer. I am also a huge fan of BBC shows such as Doctor Who and Sherlock so I was thrilled when I had an opportunity to tour the UK and visit London, Cardiff, and Edinburgh. I was even lucky enough to get to witness the filming of some scenes of Doctor Who while making friends with an English family that I still keep in contact with. Hopefully I get a chance to visit them again someday! </p>
 
 <p>These and my other short trips to Stockholm, Sweden and Talinn, Estonia were great, but I think my favorite were the trips I made to vist friends in their home countries. In the course of the semester I made friends all over Europe and I was fortunate enough to visit a handful of them. This resulted in a full nine days spent with a native Parisian eating escargot in the shadow of the Eifel Tower after an intense lazer tag session, preparing for Vilnius, Lithuania’s biennial cultural festival with fresh Kibinai, brushing up on my German while lounging in a Leipzig park, and celebrating the Fourth of July at a TGI Friday after visiting Schönbrunn Castle in Vienna. A truly life changing experience.  </p>
 
-  </div>
-</div>
+			</div>
+		</div>
+		<div class="row mt centered">	
+			<div class="col-lg-8 col-lg-offset-2">
+				<p><bt>Location: <a href="www.sdu.dk">University of Southern Denmark, Odense, DK</a></bt> - <bt>Type: <a href="">Study Abroad</a></bt> - <bt>Date: <a href="#">Spring 2012</a></bt></p>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	
+	<!-- +++++ Footer Section +++++ -->
+	
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>My Homes</h4>
+					<p>
+						ISU, Ames, IA<br/>
+						SDU, Odense, Denmark<br/>
+						Microsoft, Seatle, WA
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>My Links</h4>
+					<p>
+						<a href="blog.codyhoover.com">Curent Blog</a><br/>
+						<a href="denmark.codyhoover.com">Denmark Blog</a><br/>
+						<a href="https://www.linkedin.com/pub/cody-hoover/68/154/773">LinkedIn</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>About Me</h4>
+					<p>A recent college graduate hoping to find the meaning of life in the bottom of a chinese takeout dinner.</p>
+				</div><!-- /col-lg-4 -->
+			
+			</div>
+		
+		</div>
+	</div>
+	
 
-
-      </div>
-      <hr>
-      <footer>
-        <p>&copy; 2014 Cody Hoover
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
-
-    </div>
-
-    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/bootstrap.min.js"></script>
   </body>
 </html>
-
