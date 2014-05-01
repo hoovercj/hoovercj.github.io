@@ -16,9 +16,14 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/themes/twitter/bootstrap/css/cyborg.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/cyborg.css" rel="stylesheet">
+
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -27,26 +32,12 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
 
-    <script src="/assets/themes/twitter/jquery/jquery.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript">
       // Avoid conflict with ender.js.
       jQuery.noConflict();
     </script>
-
-
-    <!-- for fancybox -->
-    <link rel="stylesheet" href="/assets/themes/twitter/fancybox/jquery.fancybox.css" />
-    <script src="/assets/themes/twitter/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-    <script language="Javascript" type="text/javascript">
-        //have to do the noconflict because the version on the fancybox
-        //js is different than the rest of the site
-        var fancy = jQuery.noConflict();
-        fancy(document).ready(function() {
-            jQuery(".fancybox").fancybox();
-        });
-    </script>
-
-    <script src="/assets/themes/twitter/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
 
     <!-- atom & rss feed -->
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -58,195 +49,36 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-narrow">
-          <a class="brand" href="/">Cody Hoover</a>
+          <a class="brand" href="../index.html">Cody Hoover</a>
           <ul class="nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class=" caret"></b></a>
-              <ul class="dropdown-menu">
-                
-                
-                
-
-
-  
-    
-  
-
-  
-    
-    	<li><a href="/projects/gwdb.html">Guild Wars 2 Crafting DB</a></li>
-    
-  
-
-  
-    
-    	<li><a href="/projects/vtgraph.html">VT-Graph</a></li>
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-
-
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">International Experience <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                
-                
-                
-
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-    
-    	<li><a href="/international/lego.html">LEGO Mobile App Challenge</a></li>
-    
-  
-
-  
-    
-    	<li><a href="/international/sdu.html">University of Southern Denmark</a></li>
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-
-
-              </ul>
-            </li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="http://blog.codyhoover.com">Blog</a></li>
+            <li><a href="../subscribe.html">Subscribe</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="container-narrow">
+    <br/>
+    <br/>  
+    <div class="row">
+      <div class="col-md-4 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <div class="hero-unit">
+          <h1>VitruTrace: VT-Graph</h1>
+          <p>An application for real-time graphing of physiological data</p>
+        </div>
+      </div><!-- /col-lg-4 col-lg-offset-2 -->
+      <div class="col-md-2 col-sm-10 col-sm-offset-1">
+        <ul class="nav nav-tabs nav-stacked">
+        <li><a href="http://www.vrac.iastate.edu/">VRAC Homepage</a></li>
+        <li><a href="http://www.public.iastate.edu/~nir/">Dr. Nir Keren's Website</a></li>
+        </ul>
+      </div><!-- /col-lg-2 -->
+    </div><!-- /row --> 
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 
-      <div class="content">
-        
-<div id="content" class="row-fluid">
-	<div class="span9 main">
-		<div class="hero-unit">
-			<h1>VitruTrace: VT-Graph</h1>
-			<p>An application for real-time graphing of physiological data</p>
-		</div>
-	</div>		
-	<div class="span3 sidebar">
-		<ul class="nav nav-tabs nav-stacked">
-			<li><a href="http://www.vrac.iastate.edu/">VRAC Homepage</a></li>
-			<li><a href="http://www.public.iastate.edu/~nir/">Dr. Nir Keren's Website</a></li>
-		</ul>
-	</div>
-</div>
 
 <h1 id="introduction">Introduction</h1>
 <p>VT-Graph is an android application developed for the VirtuTrace project under the direction of Drs. Nir Keren and Warren Franke. The system is used for collecting physiological data from participants during simulations with soldiers, law enforcement officers, and firefighters in virtual reality environments. The participant is hooked to Biopac which monitors physiological data such as ECG, cardiac output, respiration rate, and galvanic skin response which is sent to an Android device running VT-Graph.</p>
@@ -275,8 +107,8 @@ Below that there is a list of data channels that you can choose to have displaye
 Below the channel list you will see the Position selector. On either side of the screen will be arrows (&#8220;&#171;&#8221; and &#8220;&#187;&#8221;) and below that will be a preview area. The display is divided into a 3x2 grid, and each graph can take up any size rectangle within that grid. That means that a graph can take up a 1x1, 2x1, 2x2, or any other open spot. However, the options are automatically restricted to those that do not overlap with other graphs. Pressing the left or right arrow will change the preview to show where this graph will be. When you are satisfied with the configuration of the graph, click save which will take you back to the Graph List where you can edit other graphs or create more.
 ### Activating a Dashboard
 From the slide out menu, select the Dashboard that you want to activate. A popup menu will show you options such as &#8220;rename&#8221; the Dashboard, &#8220;activate&#8221; a Dashboard to see its graphs plotting, &#8220;delete&#8221; a dashboard to remove it and all its graphs from the system, or &#8220;edit&#8221; it to add or edit graphs. Selecting &#8220;Activate&#8221; will update the main display area to show the graphs that were configured and will begin fetching information from the server that you have connected to. If you are NOT connected to a server, the app may crash. If that happens, re-launch the application, make sure you connect properly, and try again. Once activated you should see the information scrolling across the screen.</p>
-
-      </div>
+  </div><!-- /col-lg-8 col-lg-offset-2 -->
+</div><!-- row -->
       <hr>
       <footer>
         <p>&copy; 2014 Cody Hoover
