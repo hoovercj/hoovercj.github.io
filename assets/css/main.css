@@ -240,25 +240,3 @@ bt {
 	font-size: 40px;
 	color: #1abc9c;
 }
-
-.img-profile {
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-
-div.video {
-	display: block;
-	margin: auto;
-    width: 100%;
-    max-width: 800px;
-}
-
-.img-bordered {
-	border: 1px solid #000000;
-	border-radius: 4px;
-}
-
-p.caption {
-	padding-top: 15px;
-}
