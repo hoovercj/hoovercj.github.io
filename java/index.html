@@ -31,25 +31,7 @@
   <body>
 
     <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../index.html">CODY HOOVER</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../portfolio.html">Portfolio</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="http://blog.codyhoover.com">Blog</a></li>
-            <li><a href="../subscribe.html">Subscribe</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+    <div id="header">
     </div>
 	
 	
@@ -61,6 +43,7 @@
 				<h3>Technical Writing: Hello Java Tutorial</h3>
 				<hr>
 				<p>In my Technical Writing course I was tasked with writing a tutorial for something that all people entering my field of study would encounter. The first thing new software developers do when they need to learn a new language, including their first, is some form of "Hello World" tutorial. Each language is different, and even different tutorials for the same language can vary significantly. However, all of these tutorials introduce both the form and the function of a language. Mine aims to be as approachable as possible for new programmers, and includes a complete glossary of terms. Go ahead, even if you don't know how to program you can check it out and let me know what you think.</p>
+				<p>Check out the manual <a href="hellojava.html">here</a></p>
 			</div>
 		</div>
 		<div class="row mt centered">	
@@ -74,34 +57,6 @@
 	<!-- +++++ Footer Section +++++ -->
 	
 	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<h4>My Homes</h4>
-					<p>
-						ISU, Ames, IA<br/>
-						SDU, Odense, Denmark<br/>
-						Microsoft, Seatle, WA
-					</p>
-				</div><!-- /col-lg-4 -->
-				
-				<div class="col-lg-4">
-					<h4>My Links</h4>
-					<p>
-						<a href="blog.codyhoover.com">Curent Blog</a><br/>
-						<a href="denmark.codyhoover.com">Denmark Blog</a><br/>
-						<a href="https://www.linkedin.com/pub/cody-hoover/68/154/773">LinkedIn</a>
-					</p>
-				</div><!-- /col-lg-4 -->
-				
-				<div class="col-lg-4">
-					<h4>About Me</h4>
-					<p>A recent college graduate hoping to find the meaning of life in the bottom of a chinese takeout dinner.</p>
-				</div><!-- /col-lg-4 -->
-			
-			</div>
-		
-		</div>
 	</div>
 	
 
@@ -109,5 +64,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script> 
+	  $("#header").load("../_templates/header.html"); 
+	  $("#footer").load("../_templates/footer.html"); 
+	</script> 
   </body>
 </html>

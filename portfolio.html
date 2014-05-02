@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,25 +32,7 @@
   <body>
 
     <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">CODY HOOVER</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="http://blog.codyhoover.com">Blog</a></li>
-            <li><a href="subscribe.html">Subscribe</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+    <div class="header" id="header">
     </div>
 	
 	
@@ -65,30 +48,30 @@
 		</div>
 		<div class="row mt centered">	
 			<div class="col-lg-4">
-				<a class="zoom green" href="/satsy/aboutsatsy.html"><img class="img-responsive" src="assets/img/portfolio/satsy.png" alt="" /></a>
-				<p>Satsy: Source Code Search</p>
+				<a class="zoom green" href="/satsy/aboutsatsy.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/satsy.png" alt="" /></a>
+				<p class="caption">Satsy: Source Code Search</p>
 			</div>
 			<div class="col-lg-4">
-				<a class="zoom green" href="international/sdu.html"><img class="img-responsive" src="assets/img/portfolio/sdu.png" alt="" /></a>
-				<p>University of Southern Denmark</p>
+				<a class="zoom green" href="international/sdu.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/sdu.png" alt="" /></a>
+				<p class="caption">University of Southern Denmark</p>
 			</div>
 			<div class="col-lg-4">
-				<a class="zoom green" href="international/lego.html"><img class="img-responsive" src="assets/img/portfolio/lego.png" alt="" /></a>
-				<p>LEGO Mobile App Challenge</p>
+				<a class="zoom green" href="international/lego.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/lego.png" alt="" /></a>
+				<p class="caption">LEGO Mobile App Challenge</p>
 			</div>
 		</div><!-- /row -->
 		<div class="row mt centered">	
 			<div class="col-lg-4">
-				<a class="zoom green" href="mobile/vtgraph.html"><img class="img-responsive" src="assets/img/portfolio/vrac.png" alt="" /></a>
-				<p>VRAC Research Assistant</p>
+				<a class="zoom green" href="mobile/vtgraph.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/vrac.png" alt="" /></a>
+				<p class="caption">VRAC Research Assistant</p>
 			</div>
 			<div class="col-lg-4">
-				<a class="zoom green" href="mobile/gwdb.html"><img class="img-responsive" src="assets/img/portfolio/gwdb.png" alt="" /></a>
-				<p>Guild Wars 2 Android App</p>
+				<a class="zoom green" href="mobile/gwdb.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/gwdb.png" alt="" /></a>
+				<p class="caption">Guild Wars 2 Android App</p>
 			</div>
 			<div class="col-lg-4">
-				<a class="zoom green" href="/java/index.html"><img class="img-responsive" src="assets/img/portfolio/hellojava.png" alt="" /></a>
-				<p>"Hello Java" Tutorial</p>
+				<a class="zoom green" href="/java/index.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/hellojava.png" alt="" /></a>
+				<p class="caption">"Hello Java" Tutorial</p>
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
@@ -132,5 +115,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script> 
+	  $("#header").load("_templates/header.html"); 
+	  $("#footer").load("_templates/footer.html");
+	</script> 
   </body>
 </html>

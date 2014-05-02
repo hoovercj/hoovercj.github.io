@@ -46,20 +46,9 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="../index.html">Cody Hoover</a>
-          <ul class="nav">
-            <li><a href="../portfolio.html">Portfolio</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="http://blog.codyhoover.com">Blog</a></li>
-            <li><a href="../subscribe.html">Subscribe</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="header" id="header">
     </div>
-
+    
     <br/>
     <br/>  
     <div class="row">
@@ -118,7 +107,9 @@
       </footer>
 
     </div>
-
+    <script> 
+      $("#header").load("../_templates/header.html"); 
+    </script>
     
   </body>
 </html>
