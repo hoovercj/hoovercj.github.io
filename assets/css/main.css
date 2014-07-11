@@ -240,3 +240,40 @@ bt {
 	font-size: 40px;
 	color: #1abc9c;
 }
+
+iframe
+{
+	width: 420px;
+	height: 315px;
+}
+
+@media screen and (max-width: 500px)
+{
+	iframe
+	{
+		max-width: 420px;
+		max-height: 315px;
+	}
+}
+
+@media screen and (max-width: 420px)
+{
+	iframe
+	{
+		width: 380px;
+		height: 285px;
+		max-width: 380px;
+		max-height: 285px;
+	}
+}
+
+@media screen and (max-width: 320px)
+{
+	iframe
+	{
+		width: 280px;
+		height: 210px;
+		max-width: 280px;
+		max-height: 210px;
+	}
+}
