@@ -22,7 +22,7 @@ function drawVisualization() {
         legend: 'none',
         tooltip: {showColorCode: false},
         keepAspectRatio: true,
-        width: '100%',
+        width: '100%'
       };
   
   var geochart = new google.visualization.GeoChart(
