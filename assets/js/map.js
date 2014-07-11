@@ -20,10 +20,16 @@ function drawVisualization() {
         displayMode: 'regions',
         colorAxis: {colors: ['#8CDECE','#1abc9c',]},
         legend: 'none',
-        tooltip: {showColorCode: false}
+        tooltip: {showColorCode: false},
+        keepAspectRatio: true,
+        width: '100%',
       };
   
   var geochart = new google.visualization.GeoChart(
       document.getElementById('visualization'));
   geochart.draw(data, options);
 }
+
+$(window).resize(function(){
+  drawVisualization();
+});

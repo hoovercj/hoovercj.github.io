@@ -1,3 +1,4 @@
+
 .img-profile {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -16,6 +17,10 @@ div.video {
 	border-radius: 4px;
 }
 
+.map-bordered {
+	border: 1px solid #000000;
+}
+
 p.caption {
 	padding-top: 15px;
 }
@@ -30,4 +35,8 @@ p.caption {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: #ffffff;
+}
+
+.header-with-padding {
+	padding-bottom: 15px;
 }
