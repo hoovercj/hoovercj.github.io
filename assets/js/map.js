@@ -12,7 +12,7 @@ function drawVisualization() {
     ['Austria',1],
     ['United Kingdom',1],
     ['France',1],
-    ['Spain',1]
+    ['Spain',2]
   ]);
 
   var options = {
