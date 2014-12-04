@@ -21,9 +21,9 @@ function drawVisualization() {
   var options = {
         region: '150',
         displayMode: 'regions',
-        colorAxis: {colors: ['#1abc9c','#1abc9c',]},
+        datalessRegionColor: '#1abc9c',        
         legend: 'none',
-        tooltip: {trigger: 'none'},
+        tooltip: {showColorCode: 'false'},
         keepAspectRatio: true,
         width: '100%'
       };
