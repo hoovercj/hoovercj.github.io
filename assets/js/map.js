@@ -3,19 +3,19 @@ google.setOnLoadCallback(drawVisualization);
 
 function drawVisualization() {
   var data = google.visualization.arrayToDataTable([
-    ['Country',"I've visited here!"],
-    ['Denmark',1],
-    ['Sweden',1],
-    ['Estonia',1],
-    ['Lithuania',1],
-    ['Germany',1],
-    ['Austria',1],
-    ['United Kingdom',1],
-    ['France',1],
-    ['Spain',1],
-    ['Belgium',1],
-    ['Czech Republic',1],
-    ['Poland',1]
+    ['Country'],
+    ['Denmark'],
+    ['Sweden'],
+    ['Estonia'],
+    ['Lithuania'],
+    ['Germany'],
+    ['Austria'],
+    ['United Kingdom'],
+    ['France'],
+    ['Spain'],
+    ['Belgium'],
+    ['Czech Republic'],
+    ['Poland']
   ]);
 
   var options = {
