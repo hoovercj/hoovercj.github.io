@@ -2,7 +2,7 @@ google.load('visualization', '1', {'packages': ['geochart']});
 google.setOnLoadCallback(drawVisualization);
 
 function drawVisualization() {
-  var data = google.visualization.DataTable();
+  var data = new google.visualization.DataTable();
   data.addColumn('string', 'Country');
   data.addColumn('number', 'Value');
   data.addColumn({type:'string', role:'tooltip'});
