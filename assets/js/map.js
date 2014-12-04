@@ -3,24 +3,25 @@ google.setOnLoadCallback(drawVisualization);
 
 function drawVisualization() {
   var data = google.visualization.arrayToDataTable([
-    ['Country','Number of Visits'],
-    ['Denmark',2],
-    ['Sweden',2],
+    ['Country',"I've visited here!"],
+    ['Denmark',1],
+    ['Sweden',1],
     ['Estonia',1],
     ['Lithuania',1],
-    ['Germany',3],
+    ['Germany',1],
     ['Austria',1],
     ['United Kingdom',1],
     ['France',1],
-    ['Spain',2],
+    ['Spain',1],
     ['Belgium',1],
-    ['Czech Republic',1]
+    ['Czech Republic',1],
+    ['Poland',1]
   ]);
 
   var options = {
         region: '150',
         displayMode: 'regions',
-        colorAxis: {colors: ['#8CDECE','#1abc9c',]},
+        colorAxis: {colors: ['#1abc9c','#1abc9c',]},
         legend: 'none',
         tooltip: {trigger: 'none'},
         keepAspectRatio: true,
