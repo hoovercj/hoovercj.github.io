@@ -8,11 +8,13 @@ function drawVisualization() {
     ['Sweden',2],
     ['Estonia',1],
     ['Lithuania',1],
-    ['Germany',2],
+    ['Germany',3],
     ['Austria',1],
     ['United Kingdom',1],
     ['France',1],
-    ['Spain',2]
+    ['Spain',2],
+    ['Belgium',1],
+    ['Czech Republic',1]
   ]);
 
   var options = {
@@ -20,7 +22,7 @@ function drawVisualization() {
         displayMode: 'regions',
         colorAxis: {colors: ['#8CDECE','#1abc9c',]},
         legend: 'none',
-        tooltip: {showColorCode: false},
+        tooltip: {trigger: 'none'},
         keepAspectRatio: true,
         width: '100%'
       };
