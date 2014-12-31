@@ -206,34 +206,6 @@ bt {
 	font-size: 12px;
 }
 
-/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
-/* Effects also are controled by hover.zoom.js */
-.zoom { 
-    display:block; 
-    position:relative; 
-    overflow:hidden; 
-    background:transparent url(../img/loader.gif) no-repeat center;
-}
-
-
-    .zoomOverlay {
-        position:absolute;
-        top:0; left:0;
-        bottom:0; right:0;
-        display:none;
-        background-image:url(../img/zoom.png);
-        background-repeat:no-repeat;
-        background-position:center;
-    }
-
-.zoom2 {
-	opacity: 1;
-}
-
-.zoom2:hover {
-	opacity: 0.5;
-}
-
 /* glyphicon Configuration */
 
 .glyphicon {

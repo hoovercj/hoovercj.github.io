@@ -8,7 +8,6 @@
                 overlay: true,
                 overlayColor: '#2e9dbd',
                 overlayOpacity: 0.9,
-                zoom: 25,
                 speed: 300
             };
              
@@ -38,9 +37,6 @@
                         $(this).parent().css('background-image', 'none');
                         hz.hover(function() {
                             $('img', this).stop().animate({
-                                height: height + s.zoom,
-                                marginLeft: -(s.zoom),
-                                marginTop: -(s.zoom)
                             }, s.speed);
                             if(s.overlay === true) {
                                 $(this).parent().find('.zoomOverlay').stop().animate({
@@ -49,9 +45,6 @@
                             }
                         }, function() {
                             $('img', this).stop().animate({
-                                height: height,
-                                marginLeft: 0,
-                                marginTop: 0
                             }, s.speed);
                             if(s.overlay === true) {
                                 $(this).parent().find('.zoomOverlay').stop().animate({
