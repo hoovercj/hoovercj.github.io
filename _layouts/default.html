@@ -10,20 +10,20 @@
 
     <meta property="og:title" content="{{ site.title }}"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="{{ site.siteurl }}/{{ site.favicon }}"/>
-    <meta property="og:url" content="{{ site.siteurl }}"/>
+    <meta property="og:image" content="{{ site.baseurl }}/{{ site.favicon }}"/>
+    <meta property="og:url" content="{{ site.baseurl }}"/>
     <meta property="og:description" content="{{ page.description }}"/>
 
     <title>{{ site.title }}</title>
     
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-social.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/bootstrap-social.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,7 +35,7 @@
 <body>
     
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="{{ site.siteurl }}/assets/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
     
     <div class="header">
         <div class="navbar navbar-inverse navbar-static-top">
@@ -46,14 +46,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="{{ site.siteurl }}/index.html">CODY HOOVER</a>
+              <a class="navbar-brand" href="{{ site.baseurl }}/index.html">CODY HOOVER</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ site.siteurl }}/portfolio.html">Portfolio</a></li>
-                <li><a href="{{ site.siteurl }}/about.html">About</a></li>
+                <li><a href="{{ site.baseurl }}/portfolio.html">Portfolio</a></li>
+                <li><a href="{{ site.baseurl }}/about.html">About</a></li>
                 <li><a href="{{ site.blogurl }}">Blog</a></li>
-                <li><a href="{{ site.siteurl }}/subscribe.html">Subscribe</a></li>
+                <li><a href="{{ site.baseurl }}/subscribe.html">Subscribe</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
