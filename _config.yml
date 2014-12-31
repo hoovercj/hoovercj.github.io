@@ -1,0 +1,69 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the header)
+title: CODY HOOVER
+author: Cody Hoover
+description: A Personal Portfolio
+url: http://www.codyhoover.com
+blogurl: http://blog.codyhoover.com
+oldblogurl: http://denmark.codyhoover.com
+siteurl: "http://www.codyhoover.com"
+repo: https://github.com/hoovercj/hoovercj.github.io
+favicon: "favicon.ico"
+img:
+
+
+# The production_url is only used when full-domain names are needed
+# such as sitemap.txt 
+# Most places will/should use BASE_PATH to make the urls
+#
+# If you have set a CNAME (pages.github.com) set your custom domain here.
+# Else if you are pushing to username.github.com, replace with your username.
+# Finally if you are pushing to a GitHub project page, include the project name at the end.
+#
+production_url : http://www.codyhoover.com
+
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  email: portfolio@codyhoover.com 
+  github: https://www.github.com/hoovercj
+  linkedin: https://www.linkedin.com/pub/cody-hoover/68/154/773
+  google: https://plus.google.com/+CodyHoover
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+
+# Your disqus shortname, entering this will enable commenting on posts
+disqus: 
+
+# Settings for analytics helper
+# Set 'provider' to the analytics provider you want to use.
+# Set 'provider' to false to turn analytics off globally.
+#        
+analytics :
+  provider : google
+  google : 
+      tracking_id : 'UA-51667949-1'
+
+
+# Settings for sharing helper. 
+# Sharing is for things like tweet, plusone, like, reddit buttons etc.
+# Set 'provider' to the sharing provider you want to use.
+# Set 'provider' to false to turn sharing off globally.
+#
+sharing :
+  provider : false
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md

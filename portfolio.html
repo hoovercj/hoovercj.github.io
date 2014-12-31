@@ -1,98 +1,44 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
-
-    <title>CODY - Projects</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-social.css" rel="stylesheet">
-    
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/hover.zoom.js"></script>
-    <script src="assets/js/hover.zoom.conf.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <!-- Static navbar -->
-    <div class="header" id="header">
-    </div>
-	
-	
-	<!-- +++++ Projects Section +++++ -->
-	
-	<div class="container pt">
-		<div class="row mt">
-			<div class="col-lg-6 col-lg-offset-3 centered">
-				<h3>MY PORTFOLIO</h3>
-				<hr>
-				<p>Check out a sampling of my projects and experiences below.</p>
-			</div>
+---
+layout: default
+---
+<!-- +++++ Projects Section +++++ -->
+<div class="container pt">
+	<div class="row mt">
+		<div class="col-lg-6 col-lg-offset-3 centered">
+			<h3>MY PORTFOLIO</h3>
+			<hr>
+			<p>Check out a sampling of my projects and experiences below.</p>
 		</div>
-		<div class="row mt centered">	
-			<div class="col-lg-4">
-				<a class="zoom green" href="/satsy/aboutsatsy.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/satsy.png" alt="" /></a>
-				<p class="caption">Satsy: Source Code Search</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="international/sdu.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/sdu.png" alt="" /></a>
-				<p class="caption">University of Southern Denmark</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="international/lego.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/lego.png" alt="" /></a>
-				<p class="caption">LEGO Mobile App Challenge</p>
-			</div>
-		</div><!-- /row -->
-		<div class="row mt centered">	
-			<div class="col-lg-4">
-				<a class="zoom green" href="mobile/vtgraph.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/vrac.png" alt="" /></a>
-				<p class="caption">VRAC Research Assistant</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="mobile/gwdb.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/gwdb.png" alt="" /></a>
-				<p class="caption">Guild Wars 2 Android App</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="/java/index.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/hellojava.png" alt="" /></a>
-				<p class="caption">"Hello Java" Tutorial</p>
-			</div>
-		</div><!-- /row -->
-	</div><!-- /container -->
-	
-	
-	<!-- +++++ Footer Section +++++ -->
-	
-	<div id="footer">
 	</div>
-	
+	<div class="row mt centered">	
+		<div class="col-lg-4">
+			<a class="zoom green" href="/satsy/aboutsatsy.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/satsy.png" alt="" /></a>
+			<p class="caption">Satsy: Source Code Search</p>
+		</div>
+		<div class="col-lg-4">
+			<a class="zoom green" href="international/sdu.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/sdu.png" alt="" /></a>
+			<p class="caption">University of Southern Denmark</p>
+		</div>
+		<div class="col-lg-4">
+			<a class="zoom green" href="international/lego.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/lego.png" alt="" /></a>
+			<p class="caption">LEGO Mobile App Challenge</p>
+		</div>
+	</div><!-- /row -->
+	<div class="row mt centered">	
+		<div class="col-lg-4">
+			<a class="zoom green" href="mobile/vtgraph.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/vrac.png" alt="" /></a>
+			<p class="caption">VRAC Research Assistant</p>
+		</div>
+		<div class="col-lg-4">
+			<a class="zoom green" href="mobile/gwdb.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/gwdb.png" alt="" /></a>
+			<p class="caption">Guild Wars 2 Android App</p>
+		</div>
+		<div class="col-lg-4">
+			<a class="zoom green" href="/java/index.html"><img class="img-responsive img-bordered" src="assets/img/portfolio/hellojava.png" alt="" /></a>
+			<p class="caption">"Hello Java" Tutorial</p>
+		</div>
+	</div><!-- /row -->
+</div><!-- /container -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script> 
-	  $("#header").load("_templates/header.html"); 
-	  $("#footer").load("_templates/footer.html");
-	</script> 
-  </body>
-</html>
+<script src="{{ site.url }}/assets/js/hover.zoom.js"></script>
+<script src="{{ site.url }}/assets/js/hover.zoom.conf.js"></script>
