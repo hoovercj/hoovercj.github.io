@@ -11,9 +11,9 @@
 		{% if page.misc %}
 			{{ page.misc.name }}: <a href="{{ page.misc.link }}">{{ page.misc.text }}</a> -  
 		{% endif %}
-		{% if page.technologies %}<p>Technologies Used: {% for technology in page.technologies %}
+		{% if page.technologies %}Technologies Used: {% for technology in page.technologies %}
 			<a href="{{ technology[1] }}">{{ technology[0] }}</a>{% if forloop.last != true %},{% endif %} 
-		{% endfor %} - {% endif %}Type: <a href="">{{ page.displayType }}</a> - Date: <a href="">{{ page.displayDate }}</a></p>
+		{% endfor %} - {% endif %}Type: <a href="">{{ page.displayType }}</a> - Date: <a href="">{{ page.displayDate }}</a>
 	</div><!-- /row -->
 </div><!-- /container -->
 {% include footer.html %}
