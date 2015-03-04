@@ -9,9 +9,9 @@ layout: default
 			<p>Check out a sampling of my projects and experiences below.</p>
 		</div>
 	</div>
-	<div class="row mt centered">	
-{% for page in site.pages %}
-    {% if page.group == 'portfolio' %}
+	<div class="row mt centered">
+	{% assign portfolioPages = (site.pages | where: 'group' , 'portfolio') %}	
+	{% for page in portfolioPages %}
 		<div class="col-lg-4 col-md-6">
 			<div class="portfolio-item">
 				<a href={{ page.url }}>
@@ -25,7 +25,6 @@ layout: default
 			</div>
 			<p class="caption">{{ page.label }}</p>
 		</div>	
-    {% endif %}
-{% endfor %}
+    {% endfor %}
 	</div><!-- /row -->
 </div><!-- /container -->
