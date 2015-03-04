@@ -1,0 +1,19 @@
+{% include header.html %}
+<div class="container pt">
+	<div class="row mt">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h3>{{ page.title }}  <small>{{ page.subtitle }}</small></h3>
+			<hr>
+			{{ content}}
+		</div>
+	</div>
+	<div class="row mt centered">	
+		{% if page.misc %}
+			{{ page.misc.name }}: <a href="{{ page.misc.link }}">{{ page.misc.text }}</a> -  
+		{% endif %}
+		{% if technologies %}<p>Technologies Used: {% for technology in page.technologies %}
+			Technology: <a href="{{ technology[1] }}">{{ technology[0] }}</a>, 
+		{% endfor %} - {% endif %}Type: <a href="">{{ page.displayType }}</a> - Date: <a href="">{{ page.displayDate }}</a></p>
+	</div><!-- /row -->
+</div><!-- /container -->
+{% include footer.html %}
