@@ -4,9 +4,14 @@ group: portfolio
 featured: featured
 image: wethepeople.png
 label: We the People Social Media Bot
-title: We the People Social Media Bot
+title: We the People
+subtitle: Social Media Bot
 displayType: Node.js Script
 displayDate: February 2015
+misc:
+    name: Source
+    text: github
+    link: https://github.com/hoovercj/we-the-people
 technologies:
     Node.js: http://www.nodejs.org
     Heroku: http://www.heroku.com
@@ -14,4 +19,4 @@ technologies:
 ---	
 <!-- +++++ Projects Section +++++ -->	
 <p><a href="http://www.whitehouse.gov">The White House</a> provides an <a href="https://petitions.whitehouse.gov/">online petition platform</a> for gathering signatures for causes that citizens feel are especially important. If they reach enough support, the White House promises to respond. However, aside from the <a href="https://twitter.com/wethepeople">official twitter account</a> which only tweets new White House responses, there isn’t a good discovery mechanism making it hard for some good petitions to reach the signature threshold. Of course, you can go directly to the page and view recently posted petitions, search, and filter by categories, I know that I don’t really want to do that, and I know I’m not alone. I don’t need yet another page to check every day. I’d rather have the newest petitions and responses show up in my feed on the sites that I already use.</p>
-<p>To accomplish this, I created a node script that queries the official <a href="https://petitions.whitehouse.gov/developers">We the People API</a> to look for new responses and new active petitions which are then posted to <a href="https://www.facebook.com/wethepeoplepetitions">Facebook</a>, <a href="https://twitter.com/wethepetitions">Twitter</a>, and <a href="http://whitehousepetitions.tumblr.com/">Tumblr</a>. Previously posted responses and open petitions are cached using redis. This is hosted on Heroku and ran every hour as a scheduled job.</p>
+<p>So I made it happen. To accomplish this, I created a node script that queries the official <a href="https://petitions.whitehouse.gov/developers">We the People API</a> to look for new responses and new active petitions which are then posted to <a href="https://www.facebook.com/wethepeoplepetitions">Facebook</a>, <a href="https://twitter.com/wethepetitions">Twitter</a>, and <a href="http://whitehousepetitions.tumblr.com/">Tumblr</a>. Previously posted responses and open petitions are cached using redis. This is hosted on Heroku and ran every hour as a scheduled job.</p>
