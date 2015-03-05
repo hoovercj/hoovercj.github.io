@@ -7,7 +7,7 @@ layout: default
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 centered">
 			<img class="img-profile" src="{{ site.baseurl }}/assets/img/cody.jpg" alt="Cody">
-			<h1>Hi, I am Cody!</h1>
+			<h1>Hi, I'm Cody!</h1>
 			<hr>
 			<p>Hello everybody. I'm Cody, a recent college graduate hoping to find the meaning of life in the bottom of a chinese takeout dinner. I'm a travel-addict ready to break out of Iowa. When I'm not searching for the best Chinese and Indian restaurants in town I'm traveling to different worlds via great books or shows.</p>
 			<p>I just finished up my summer as a Software Development Intern for Microsoft in Seattle in the cloud services wing of the Developer Division and am now heading to Germany to begin my Master's studies at RWTH Aachen. I've never had to speak another language to live before, so this is sure to be a wild ride. You can follow my adventure at <a href="{{ site.blogurl }}">my new blog</a> to stay informed. You can also read about my previous adventures abroad on <a href="{{ site.oldblogurl }}">my old blog</a>. Lastly, check out the video below to hear my take on what it means to be a software engineer.</p>		
@@ -15,13 +15,42 @@ layout: default
 	</div><!-- /row -->
 </div>
 <div class="grey">
-<div class="container">
+	<div class="container">
+		<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="embed-responsive embed-responsive-4by3 center-block">
+		    			<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/hQX-A7PFAGE?feature=player_embedded" allowfullscreen="allowfullscreen">  </iframe>
+		    		</div>
+		    	</div>
+		</div><!-- /row -->
+	</div> <!-- /container -->
+</div>
+<div class="container white">
 	<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-				<div class="embed-responsive embed-responsive-4by3 center-block">
-	    			<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/hQX-A7PFAGE?feature=player_embedded" allowfullscreen="allowfullscreen">  </iframe>
-	    		</div>
-	    	</div>
+		<div class="col-lg-6 col-lg-offset-3 centered">
+			<h3>FEATURED PROJECTS</h3>
+			<hr>
+			<p>View my complete <a href="{{ site.baseurl }}/portfolio.html">portfolio</a>.</p>
+		</div>
+	</div>
+	<div class="row centered">
+	{% assign featuredPages = (site.pages | where: 'featured' , 'featured') %}	
+	{% for page in featuredPages %}
+		<div class="col-lg-4">
+			<div class="portfolio-item">
+				<a href={{ page.url }}>
+					<div class="portfolio-item-overlay">
+						<span class='fa fa-stack fa-lg'>
+							<i class='fa fa-search fa-3x'></i>
+						</span>
+					</div>
+					<img class="img-responsive img-bordered" src="{{ site.baseurl }}/assets/img/portfolio/{{ page.image }}" alt="" />
+				</a>
+			</div>
+			<p class="caption">{{ page.label }}</p>
+		</div>	
+    {% endfor %}
 	</div><!-- /row -->
-</div> <!-- /container -->
+</div><!-- /container -->
+
 </div>
