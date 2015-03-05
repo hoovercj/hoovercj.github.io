@@ -1,11 +1,11 @@
-google.load('visualization', '1', {'packages': ['geochart']});
+google.load('visualization', '1.1', {'packages': ['geochart']});
 google.setOnLoadCallback(drawVisualization);
 
 function drawVisualization() {
   var data = new google.visualization.DataTable();
   data.addColumn('string', 'Country');
   data.addColumn('number', 'Value');
-  data.addColumn({type:'string', role:'tooltip'});
+  data.addColumn({type:'string', role:'tooltip', p:{html:true}});
   data.addRows([    
     ['Denmark',1,'My Exchange Semester in Odense'],
     ['Sweden',1,'I visited Stockholm and took a cruise to Estonia!'],
@@ -18,7 +18,8 @@ function drawVisualization() {
     ['Spain',1,'The home of my beautiful girlfriend and the place I first experienced the sea'],
     ['Belgium',1,'The beer here is strong. Trust me.'],
     ['Czech Republic',1,'The beer is literally cheaper than water. Almost free.'],
-    ['Poland',1,'Bison Grass Vodka sounds weird but tastes great.']
+    ['Poland',1,'Bison Grass Vodka sounds weird but tastes great.'],
+    ['Netherlands',1,'The Anne Frank house distills the unfathamable horrors of holocaust into an uncomfortably relateable journey through the life of a single family. Also, I ate Ethiopian and Nepalese food.']
   ]);
 
   var options = {
@@ -26,7 +27,7 @@ function drawVisualization() {
         displayMode: 'regions',
         colorAxis: {colors: ['#1abc9c','#1abc9c']},
         legend: 'none',
-        tooltip: {showColorCode: 'false'},
+        tooltip: {showColorCode: 'false', isHtml: true},
         keepAspectRatio: true,
         width: '100%'
       };

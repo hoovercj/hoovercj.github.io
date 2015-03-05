@@ -82,3 +82,8 @@ overflow: hidden;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0
 }
+
+/* Tooltips in the about.html map won't wrap otherwise */
+.google-visualization-tooltip{
+    width:300px !important;
+}
