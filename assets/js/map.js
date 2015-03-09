@@ -29,7 +29,7 @@ function drawVisualization() {
         legend: 'none',
         tooltip: {showColorCode: 'false', isHtml: true},
         keepAspectRatio: true,
-        width: '100%'
+        width: '100%',
       };
   
   var geochart = new google.visualization.GeoChart(
@@ -38,5 +38,6 @@ function drawVisualization() {
 }
 
 $(window).resize(function(){
-  drawVisualization();
+	document.getElementById('visualization').innerHTML = "";
+	drawVisualization();
 });
