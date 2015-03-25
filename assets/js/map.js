@@ -19,7 +19,8 @@ function drawVisualization() {
     ['Belgium',1,'The beer here is strong. Trust me.'],
     ['Czech Republic',1,'The beer is literally cheaper than water. Almost free.'],
     ['Poland',1,'Bison Grass Vodka sounds weird but tastes great.'],
-    ['Netherlands',1,'The Anne Frank house distills the unfathamable horrors of holocaust into an uncomfortably relateable journey through the life of a single family. Also, I ate Ethiopian and Nepalese food.']
+    ['Netherlands',1,'The Anne Frank house distills the unfathamable horrors of holocaust into an uncomfortably relateable journey through the life of a single family. Also, I ate Ethiopian and Nepalese food.'],
+    ['Luxembourg',1,'Probably the most beautiful one-day stop you could make traveling between countries.']
   ]);
 
   var options = {
