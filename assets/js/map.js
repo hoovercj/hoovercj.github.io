@@ -23,7 +23,8 @@ function drawVisualization() {
     ['Luxembourg',1,'Probably the most beautiful one-day stop you could make traveling between countries.'],
     ['Italy',1,'I was skeptical, but neapolitan pizza really is the greatest on earth. And eating fresh pasta on an island overlooking the sea isn\'t too bad either.'],
     ['Finland',1,'Crossed "See the Northern Lights" off my bucket list, drove a dogsled, enjoyed a true Finnish sauna complete with an ice-water plunge and rolling in the snow, and found out how delicious reindeer taste.'],
-    ['Latvia',1,'Finally tried Rocky Mountain Oysters (bull testicles) while listening to locals perform Rockabilly music.']
+    ['Latvia',1,'Finally tried Rocky Mountain Oysters (bull testicles) while listening to locals perform Rockabilly music.'],
+    ['Ireland',1,'Spent 90% of my time in pubs listening to live music and 10% driving through the incredible countryside.']
   ]);
 
   var options = {
