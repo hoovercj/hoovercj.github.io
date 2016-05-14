@@ -7,7 +7,7 @@ function drawVisualization() {
   data.addColumn('number', 'Value');
   data.addColumn({type:'string', role:'tooltip', p:{html:true}});
   data.addRows([    
-    ['Denmark',1,'The first time I left the US was to study abroad here in Odense. And now I\'m moving back to Copenhagen to work at Microsoft!' ],
+    ['Denmark',1,'The first time I left the US was to study abroad here in Odense. And now I\'m living in Copenhagen working at Microsoft!' ],
     ['Sweden',1,'I visited Stockholm and took a cruise to Estonia!'],
     ['Estonia',1,'Came here on a cruise and bought a pair of skinny jeans. Then came back later to study for a semester.'],
     ['Lithuania',1,'Arrived on the date of an amazing 1-night biennial folk song/dance festival.'],
