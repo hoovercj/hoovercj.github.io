@@ -12,7 +12,7 @@ layout: default
 	<div class="row mt centered">
 	{% assign portfolioPages = (site.pages | where: 'group' , 'portfolio') %}	
 	{% for page in portfolioPages %}
-		<div class="col-lg-4 col-md-6">
+		<div class="col-md-3 col-sm-6 col-xs-12">
 			<div class="portfolio-item">
 				<a href={{ page.url }}>
 					<div class="portfolio-item-overlay">
