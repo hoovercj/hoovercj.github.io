@@ -21,4 +21,4 @@ I ran my first marathon in the fall of 2018 and followed up with two more in 201
 
 This worked great for a while until I wanted to use a plan that wasn't supported. Their site wasn't available on github at the time, so I had to hack around in the browser to inject the plan I wanted, but eventially I made it generate the ical for me. I knew that wasn't sustainable, though, so I made my own version of the site which allowed editing plans in the browser or downloading a template to create your own.
 
-It's now my go-to tool for setting up training plans! You can try it out yourself here: https://www.codyhoover.com/calendar-hack/
+It's now my go-to tool for setting up training plans! You can try it out yourself [here](https://www.codyhoover.com/calendar-hack/).
