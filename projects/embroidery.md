@@ -1,7 +1,6 @@
 ---
 layout: portfolio
 group: portfolio
-featured: featured
 image: embroidery.png
 label: Embroidery Color Substitutions
 title: Embroidery Color Substitutions
