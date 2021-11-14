@@ -2,7 +2,7 @@
 layout: portfolio
 group: portfolio
 image: botframework.png
-label: Transit Bot Powered by Microsoft Bot Framework
+label: Transit Bot
 title: Transit Bot
 subtitle: Getting from A to B from Skype, Slack, or Facebook
 displayType: Chat bot
