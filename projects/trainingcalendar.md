@@ -3,8 +3,8 @@ layout: portfolio
 group: portfolio
 featured: featured
 image: trainingcalendar.png
-label: \"Time to Run\" - Training Plan Tool
-title: \"Time to Run\" - Training Plan Tool
+label: Time to Run - Training Plan Tool
+title: Time to Run - Training Plan Tool
 displayType: Web App
 displayDate: Spring 2020
 misc:
